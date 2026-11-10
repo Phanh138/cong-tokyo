@@ -263,7 +263,7 @@ function count(){ return S.cart.reduce(function(a,i){return a+i.qty;},0); }
 function vHome(){
   var feat=["coconut","matcha","phin","sakura"].map(function(id){var p=byId[id];
     return '<button class="rcard" data-go="p-'+p.id+'"><img src="'+IMG[p.img]+'" alt="'+p.vi+'" loading="lazy"><div class="b"><div class="n">'+L(p.ja,p.vi)+'</div><div class="s">'+L2(p.ja,p.vi)+'</div><div class="p">'+yen(p.price)+'</div></div></button>';}).join("");
-  return '<section class="hero"><img src="'+A+'hero-room.webp" alt="Không gian quán Cộng Tokyo">'+
+  return '<section class="hero"><img src="'+IMG['hero-room.webp']+'" alt="Không gian quán Cộng Tokyo">'+
     '<div class="hero-copy"><h1>ベトナムの<br>コーヒーを、<br>東京で。</h1><div class="rule"></div><p>Cà phê Việt<br>giữa lòng Tokyo.</p></div>'+
     '<div class="cta">'+cta("メニューを見る","Xem thực đơn","menu")+'</div></section>'+
     '<div class="sec" style="padding-top:28px"><div class="values"><div><b>ベトナムの味</b><small>Hương vị Việt</small></div><div><b>静かな時間</b><small>Khoảnh khắc tĩnh</small></div><div><b>季節の一杯</b><small>Đồ uống theo mùa</small></div></div></div>'+
@@ -271,7 +271,7 @@ function vHome(){
     '<div class="rail">'+feat+'</div>'+
     '<div class="vote-band"><div class="kicker" style="color:#E8B4A8">VOTE · 投票</div><h3>'+L("東京で飲んでみたい一杯は？","Nếu Cộng đến Tokyo, bạn chọn món nào?")+'</h3><p>'+L2("東京で飲んでみたい一杯は？","Nếu Cộng đến Tokyo, bạn chọn món nào?")+'</p>'+cta("投票する","Bình chọn ngay","vote")+'</div>'+
     '<div class="sec"><div class="kicker">STORY</div><h2 class="h2">'+L("ハノイから東京へ","Từ Hà Nội đến Tokyo")+'</h2></div>'+
-    '<div class="story"><img src="'+A+'hero-cafe.webp" alt="Góc quán với rèm noren" loading="lazy" style="object-position:50% 40%"><div class="b">'+
+    '<div class="story"><img src="'+IMG['hero-cafe.webp']+'" alt="Góc quán với rèm noren" loading="lazy" style="object-position:50% 40%"><div class="b">'+
     '<p class="mincho" style="color:var(--ink);font-size:14px">2007年、ハノイ生まれ。懐かしいベトナムの空間を、東京の静かな喫茶文化とともに。</p>'+
     '<p class="p-vi">Sinh ra ở Hà Nội năm 2007. Giữ không gian hoài niệm Việt Nam, hòa cùng văn hóa quán cà phê yên tĩnh của Tokyo.</p></div></div>'+foot();
 }
